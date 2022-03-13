@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /*1rem = 10px*/
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/**************************/
+/*HEADER AND LOGO*/
+/**************************/
+
+.header {
+  background: #fdf2e9;
+  height: 9.6rem; /*Because we want header to be sticky*/
+  position: sticky;
+  top: 0;
+  padding: 0 4.8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bg {
+  background: rebeccapurple;
+  height: 1000vh;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/**************************/
+/*TOP NAV*/
+/**************************/
+.main-nav-list {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+
+  /*animation*/
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav:active {
+  color: #cf711f;
+}
+
+.nav-cta:link,
+.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background: #e67e22;
+}
+
+.nav-cta:hover,
+.nav-cta:active {
+  background: #cf711f;
+}
+
+/**************************/
+/*HERO SECTION*/
+/**************************/
+.section-hero {
+  background: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+
+  /*align items vertically to center*/
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.heading-primary {
+  font-size: 4.4rem;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  color: #333;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.6rem;
+}
+
+/**************************/
+/*BUTTONS HERO SECTION*/
+/**************************/
+.btn:link,
+.btn:visited {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+
+  display: inline-block;
+  padding: 1.6rem 3.2rem; /*half top bottom, double right and left*/
+  border-radius: 9px;
+
+  /*animation*/
+  transition: background 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background: #e67e22;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background: #cf711f;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background: none;
+
+  /*trick to add border hover without jumping*/
+  /*create the border inside of the element*/
+  box-shadow: 0 0 0 2px #fff;
+}
+
+/*reusable class*/
+.margin-right-sm {
+  margin-right: 1.6rem;
+}
+
+/**************************/
+/*CLIENTS*/
+/**************************/
+.delivered-meals {
+  margin-top: 3.2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.delivered-images {
+  display: flex;
+}
+
+.delivered-images img {
+  height: 4.8rem;
+  width: 4.8rem;
+  margin-right: -1.6rem;
+  border-radius: 50%;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-images img:last-child {
+  margin-right: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
+}
+
+/*FEATURED SECTION*/
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-featured-in {
+  color: #888;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  margin-bottom: 2.4rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3.2rem;
+}

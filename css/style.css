@@ -208,9 +208,11 @@ body {
   font-weight: 700;
 }
 
+/**************************/
 /*FEATURED SECTION*/
+/**************************/
 .container {
-  max-width: 120rem;
+  max-width: 120rem; /*convention: 1140px*/
   margin: 0 auto;
   padding: 0 3.2rem;
 }
@@ -236,4 +238,75 @@ body {
 
 .logos img {
   height: 3.2rem;
+}
+
+/**************************/
+/* REUSABLE CLASSES */
+/**************************/
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  margin-bottom: 9.6rem;
+}
+
+.grid--2cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-center {
+  align-items: center;
+}
+
+/**************************/
+/* HOW IT WORKS */
+/**************************/
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.subheading {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  display: block;
+  margin-bottom: 1.6rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  color: #ddd;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img {
+  max-width: 35%;
 }

@@ -96,6 +96,7 @@
 
     <!--SECTION FEATURED-->
     <section class="section-featured">
+      <!--CONTAINER MAX-WIDTH 120REM-->
       <div class="container">
         <h2 class="heading-featured-in">As featured in</h2>
 
@@ -120,7 +121,7 @@
       </div>
 
       <!--STEP 1-->
-      <div class="container grid grid--2cols grid-justify grid-center-v">
+      <div class="container grid grid--2cols grid-center-v">
         <!--TEXT-->
         <div class="step-text-box">
           <p class="step-number">01</p>
@@ -143,7 +144,7 @@
       </div>
 
       <!--STEP 2-->
-      <div class="container grid grid--2cols grid-justify grid-center-v">
+      <div class="container grid grid--2cols grid-center-v">
         <!--IMAGE-->
         <div class="step-image-box">
           <img
@@ -166,7 +167,7 @@
       </div>
 
       <!--STEP 3-->
-      <div class="container grid grid--2cols grid-justify grid-center-v">
+      <div class="container grid grid--2cols grid-center-v">
         <!--TEXT-->
         <div class="step-text-box">
           <p class="step-number">03</p>
@@ -190,8 +191,9 @@
 
     <!--SECTION MEAL-->
     <section class="section-meals">
-      <!--MEAL HEAD-->
+      <!--CONTAINER MAX-WIDTH 120REM-->
       <div class="container">
+        <!--MEAL HEAD-->
         <span class="subheading">Meals</span>
         <h2 class="heading-secondary">
           Omnifood AI chooses from 5,000+ recipes
@@ -208,28 +210,34 @@
             alt="Japanese Gyozas"
           />
 
-          <!--TAG-->
-          <div class="meal-tags">
-            <span class="tag">Vegetarian</span>
+          <!--MEAL CONTENT-->
+          <div class="meal-content">
+            <!--TAG-->
+            <div class="meal-tags">
+              <span class="tag tag--vegetarian">Vegetarian</span>
+            </div>
+
+            <p class="meal-title">Japanese Gyozas</p>
+
+            <!--MEAL ATTRIBUTES-->
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                <span><strong>650</strong> calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-icon"
+                  name="restaurant-outline"
+                ></ion-icon>
+                <span>NutriScore ® <strong>74</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.9</strong> rating(537)</span>
+              </li>
+            </ul>
           </div>
-
-          <p class="meal-title">Japanese Gyozas</p>
-
-          <!--MEAL ATTRIBUTES-->
-          <ul class="meal-attributes">
-            <li class="meal-attribute">
-              <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
-              <span><strong>650</strong> calories</span>
-            </li>
-            <li class="meal-attribute">
-              <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
-              <span>NutriScore ® <strong>74</strong></span>
-            </li>
-            <li class="meal-attribute">
-              <ion-icon class="meal-icon" name="star-outline"></ion-icon>
-              <span><strong>4.9</strong> rating(537)</span>
-            </li>
-          </ul>
         </div>
 
         <!--IMAGE-->
@@ -239,40 +247,51 @@
             src="images/meals/meal-2.jpg"
             alt="Avocado Salad"
           />
-          <span class="tag">Vegan</span>
-          <span class="tag">Paleo</span>
-          <p class="meal-title">Avocado Salad</p>
 
-          <!--MEAL ATTRIBUTES-->
-          <ul class="meal-attributes">
-            <li class="meal-attribute">
-              <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
-              <span><strong>400</strong> calories</span>
-            </li>
-            <li class="meal-attribute">
-              <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
-              <span>NutriScore &reg; <strong>92</strong></span>
-            </li>
-            <li class="meal-attribute">
-              <ion-icon class="meal-icon" name="star-outline"></ion-icon>
-              <span><strong>4.8</strong> rating (441)</span>
-            </li>
-          </ul>
+          <!--MEAL CONTENT-->
+          <div class="meal-content">
+            <!--TAGS-->
+            <div class="meal-tags">
+              <span class="tag tag--vegan">Vegan</span>
+              <span class="tag tag--paleo">Paleo</span>
+            </div>
+
+            <p class="meal-title">Avocado Salad</p>
+
+            <!--MEAL ATTRIBUTES-->
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                <span><strong>400</strong> calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-icon"
+                  name="restaurant-outline"
+                ></ion-icon>
+                <span>NutriScore &reg; <strong>92</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.8</strong> rating (441)</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <!--INFORMATION-->
-        <div class="meal-list">
-          <p>Works with any diet</p>
-          <ul>
-            <li>Vegetarian</li>
-            <li>Vegan</li>
-            <li>Pescatarian</li>
-            <li>Gluten-free</li>
-            <li>Lactose-free</li>
-            <li>Keto</li>
-            <li>Paleo</li>
-            <li>Low FODMAP</li>
-            <li>Kid-friendly</li>
+        <!--DIETS AVAILABLE-->
+        <div class="diets">
+          <h3 class="heading-tertiary">Works with any diet</h3>
+          <ul class="list">
+            <li class="list-item">Vegetarian</li>
+            <li class="list-item">Vegan</li>
+            <li class="list-item">Pescatarian</li>
+            <li class="list-item">Gluten-free</li>
+            <li class="list-item">Lactose-free</li>
+            <li class="list-item">Keto</li>
+            <li class="list-item">Paleo</li>
+            <li class="list-item">Low FODMAP</li>
+            <li class="list-item">Kid-friendly</li>
           </ul>
         </div>
       </div>

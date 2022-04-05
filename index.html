@@ -615,6 +615,7 @@
     <section class="section-cta">
       <div class="container">
         <div class="cta">
+          <!--CTA CONTENT-->
           <div class="cta-content">
             <h2 class="heading-secondary">Get your first meal for free!</h2>
             <p class="cta-text">
@@ -622,16 +623,41 @@
               eating well today. You can cancel or pause anytime. And the first
               meal is on us!
             </p>
-            <form>
-              <!--Name-->
-              <label for="">Full Name</label>
-              <input type="text" placeholder="John Smith" />
-              <!--Email-->
-              <label for="">Email address</label>
-              <input type="email" placeholder="me@example.com" />
-              <!--Hear from us-->
+            <form class="cta-form" action="#">
+              <div>
+                <!--Name-->
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="John Smith"
+                  required
+                />
+              </div>
 
-              <!--CTA Button-->
+              <div>
+                <!--Email-->
+                <label for="email">Email address</label>
+                <input id="email" placeholder="me@example.com" required />
+              </div>
+
+              <div>
+                <!--Hear from us-->
+                <label for="select-where">Where did your hear from us?</label>
+                <select id="select-where" required>
+                  <option value="">Please choose one option:</option>
+                  <option value="friends">Friends and family</option>
+                  <option value="youtube">Youtube video</option>
+                  <option value="podcast">Podcast</option>
+                  <option value="ad">Facebook ad</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+
+              <div class="btn-form">
+                <!--CTA Button-->
+                <button class="btn">Sign up now</button>
+              </div>
             </form>
           </div>
 
@@ -645,6 +671,9 @@
       </div>
     </section>
 
+    <!--SECTION FOOTER -->
+
+    <footer></footer>
     <!--IONIC ICONS-->
     <script
       type="module"

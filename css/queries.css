@@ -271,3 +271,8 @@
     padding: 3.2rem;
   }
 }
+
+/*Corrigindo overflow-x*/
+.hero-text-box{
+  overflow: hidden;
+}

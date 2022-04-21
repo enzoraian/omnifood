@@ -5,3 +5,71 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/*1REM = 10px*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/*=====HEADER=====*/
+.header {
+  background: #fdf2e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /*altura fixa para fazer o header sticky depois*/
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/*=====NAV=====*/
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block; /*para o padding funcionar*/
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+
+  /*animação*/
+  transform: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+/*aplica estilo apenas ao elemento que tem as duas classes*/
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  display: inline-block; /*para o padding funcionar*/
+  color: #fff;
+  background: #e67e22;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background: #cf711f;
+}

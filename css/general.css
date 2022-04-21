@@ -18,3 +18,12 @@
 .grid-5cols {
   grid-template-columns: repeat(5, 1fr);
 }
+
+.margin-right-sm {
+  margin-right: 1.6rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}

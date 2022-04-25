@@ -36,3 +36,7 @@
 .grid-center-vertical {
   align-items: center;
 }
+
+strong {
+  font-weight: 500;
+}
